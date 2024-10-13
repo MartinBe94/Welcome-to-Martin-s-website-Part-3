@@ -75,6 +75,7 @@
   
   
   /* Main column */
+
   .main {
     flex: 70%;
     background-color: white;
@@ -82,6 +83,13 @@
     max-width: 1000px;
   margin: auto;
   }
+
+  .projects a,p,h1{
+    text-decoration: none;
+    color: black;
+  }
+
+
   
   /* Fake image, just for this example */
   .fakeimg {
@@ -175,14 +183,7 @@
       transform: rotateY(180deg);
     }
     
-    .chip img {
-      float: left;
-      margin: 0 10px 0 -25px;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-    }
-  
+
 
 
 
@@ -217,6 +218,38 @@
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+  }
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+  .chip p{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 7;
+    background-color: #f1f1f1;
   }
   
 
@@ -297,14 +330,15 @@
   }
   
 
-  .chip {
+  .chip{
     display: inline-block;
-    padding: 0 19.82px;
-    height: 50px;
+    text-decoration: none;
+    color: black;
     font-size: 16px;
     border-radius: 25px;
     background-color: #f1f1f1;
   }
+
 
   /* .topnav #myLinks {
     opacity: 0;
@@ -445,13 +479,13 @@
 
     .chip {
       display: inline-block;
-      padding: 0 25px;
-      height: 50px;
-      font-size: 16px;
+      text-decoration: none;
+  color: black;
       line-height: 5%;
       border-radius: 25px;
       background-color: #f1f1f1;
     }
+
     
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
