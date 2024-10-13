@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="projects" href="projects.css">
+    <link href="https://fonts.cdnfonts.com/css/graffiti-font" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cartoon-free" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body class="flexbox mobile-container">
+
+    <header>
+        <section class="topnav">
+            <a href="#home" class="active">Projects</a>
+                <nav class="navbar" id="myLinks" >
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="portfolio.html">My Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                    <a onclick="openNav()">About Me</a>
+                </nav>
+            <a href="javascript:void(0);" class="icon" id="openBtn"><i class="fa fa-bars"></i></a>
+            <a href="javascript:void(0);" class="icon" id="closeBtn" style="display:none;"><i class="fa fa-times"></i></a>
+        </section>
+
+
+       
+
+        <section>
+            <div id="myNav" class="overlay">
+                <h1>About Me</h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content side">
+                        
+                        <h5>Photo of me:</h5>
+                    <div class="fakeimg" style="height:200px;">Image</div>
+                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                        <h3>More Text</h3>
+                        <p>Lorem ipsum dolor sit ame.</p>
+                    <div class="fakeimg" style="height:60px;">Image</div><br>
+                    <div class="fakeimg" style="height:60px;">Image</div><br>
+                    <div class="fakeimg" style="height:60px;">Image</div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main class="grid-container flex-container main">
+        <section>
+
+            <div div class="main">
+                <h1>My Projects</h1>
+                <hr>
+            <div class="flex-container">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
+                    </div>
+                        <div class="flip-card-back">
+                            <a href="https://github.com/MartinBe94/Company-API-Database">
+                            <h1>Company API</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>API Database</p>
+                            </a>
+                        </div>
+                  </div>
+                </div>
+                
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Restuarant Booking System</h1> 
+                      <p>Architect & Engineer</p> 
+                      <p>We love that guy</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <a href="https://github.com/MartinBe94/My-Homepage">
+                            <h1>Basic Webpage</h1> 
+                            <p>(Javascript/HTML/CSS)</p> 
+                            <p>We love that guy</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <a href="https://github.com/MartinBe94/Webpage-React-JS-Css-">
+                        <h1>Simple Webpage</h1> 
+                        <p>(React/Javascript/CSS)</p> 
+                        <p>We love that guy</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:150px;height:150px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <a href="https://github.com/MartinBe94/MongoCRUDDB">
+                        <h1>Sneakers Webshop </h1> 
+                        <p>(MongoCRUD DB)</p> 
+                        <p>We love that guy</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <section>
+
+        </section>
+    </footer>
+
+    <script src="navmenu.js"></script>       
+    <script src="slideshow.js"></script>
+    <script src="galleryfilter.js"></script>
+</body>
+</html>

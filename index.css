@@ -1,0 +1,71 @@
+
+/* body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  } */
+  
+  /* Create four equal columns that sits next to each other */
+  /* .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  } */
+  
+  .header {
+    display: flex;
+    padding: 220px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  }
+
+  .bgimg-1 {
+    background-image: url('image/img_parallax.jpg');
+    height: 100%;
+    justify-content: center;
+    position: flex;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: flex;
+    opacity: 0.65;
+    background-position: center;
+    background-size: cover;
+}
+
+  .caption {
+    color: #000;
+}
+
+
+  /* .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+   */
+  
