@@ -248,9 +248,9 @@ background-color: #f1f1f1; /* Background color */
 
 /* Subheading and paragraph styles in overlay */
 .overlay h5, h3, p {
-  padding: 2px; /* Padding */
+  padding: 6px; /* Padding */
   text-decoration: none; /* Remove underline */
-  font-size: 12px; /* Font size */
+  font-size: 13px; /* Font size */
   color: #818181; /* Text color */
   display: block; /* Block display */
   transition: 0.3s; /* Transition effect */
@@ -348,7 +348,7 @@ background-color: #f1f1f1; /* Background color */
   display: inline-block; /* Inline block display */
   text-decoration: none; /* Remove underline */
   color: black; /* Text color */
-  font-size: 16px; /* Font size */
+  font-size: 17px; /* Font size */
   border-radius: 25px; /* Rounded corners */
   background-color: #f1f1f1; /* Background color */
 }
