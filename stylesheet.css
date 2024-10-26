@@ -250,7 +250,7 @@ background-color: #f1f1f1; /* Background color */
 .overlay h5, h3, p {
   padding: 2px; /* Padding */
   text-decoration: none; /* Remove underline */
-  font-size: 16px; /* Font size */
+  font-size: 12px; /* Font size */
   color: #818181; /* Text color */
   display: block; /* Block display */
   transition: 0.3s; /* Transition effect */
