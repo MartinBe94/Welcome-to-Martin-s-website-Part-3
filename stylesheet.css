@@ -97,13 +97,6 @@ overflow-y: hidden; /* Hide vertical overflow */
 transition: 0.5s; /* Transition effect */
 }
 
-.overlay-content {
-position: relative; /* Relative positioning for overlay content */
-top: 8%; /* Offset from top */
-width: 100%; /* Full width */
-text-align: start; /* Start-aligned text */
-margin-top: 30px; /* Margin from top */
-}
 
 /* Heading styles in overlay */
 .overlay h1 {
@@ -117,6 +110,7 @@ transition: 0.3s; /* Transition effect */
 
 /* Subheading and paragraph styles in overlay */
 .overlay h5, h3, p {
+padding: 8px; /* Padding */
 text-decoration: none; /* Remove underline */
 font-size: 16px; /* Font size */
 color: #818181; /* Text color */
@@ -410,6 +404,14 @@ background-color: #f1f1f1; /* Background color */
 .example {
   background: green; /* Change background color */
 }
+
+.overlay-content {
+  position: relative; /* Relative positioning for overlay content */
+  top: 8%; /* Offset from top */
+  width: 100%; /* Full width */
+  text-align: start; /* Start-aligned text */
+  margin-top: 30px; /* Margin from top */
+  }
 
 .overlay {
   overflow-y: auto; /* Enable vertical scrolling */
