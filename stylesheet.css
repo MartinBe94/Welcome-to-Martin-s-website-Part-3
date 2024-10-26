@@ -264,9 +264,13 @@ background-color: #f1f1f1; /* Background color */
 /* Background image for specific section */
 .bgimg-1 {
   background-image: url('image/20231002_120450.jpg'); /* Background image */
-  height: 750px; /* Height of the section */
-  justify-content: center; /* Center content */
-  position: flex; /* Adjust positioning */
+  height: 100vh; /* Full viewport height */
+  background-position: center;
+  background-size: cover;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  width: 100%; /* Full width */
 }
 
 /* Full-width columns */
