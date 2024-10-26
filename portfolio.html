@@ -1,115 +1,240 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Portfolio</title> <!-- Title of the webpage -->
+    
+    <!-- Link to external stylesheets for custom styles -->
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="portfolio" href="portfolio.css">
+    <link rel="portfolio" href="portfolio.css"> <!-- Link to portfolio-specific styles -->
+    
+    <!-- Links to font styles from external sources -->
     <link href="https://fonts.cdnfonts.com/css/graffiti-font" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/cartoon-free" rel="stylesheet">
+    
+    <!-- Font Awesome icons for styling -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 </head>
-<body class="flexbox mobile-container">
 
+<body class="flexbox mobile-container"> <!-- Main body with CSS classes for layout -->
     <header>
         <section class="topnav">
-            <a href="#portfolio" class="active">Portfolio</a>
-                <nav class="navbar" id="myLinks" >
-                    <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="portfolio.html">My Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                    <a onclick="openNav()">About Me</a>
-                </nav>
+            <a href="#portfolio" class="active">Portfolio</a> <!-- Active link for Portfolio -->
+            <nav class="navbar" id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="portfolio.html">My Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <!-- Link to open About Me overlay -->
+                <a href="javascript:void(0);" onclick="openNav()">About Me</a>
+            </nav>
+            <!-- Button to open navigation menu (icon) -->
             <a href="javascript:void(0);" class="icon" id="openBtn"><i class="fa fa-bars"></i></a>
+            <!-- Button to close navigation menu (icon) -->
             <a href="javascript:void(0);" class="icon" id="closeBtn" style="display:none;"><i class="fa fa-times"></i></a>
         </section>
 
-
-       
-
-        <section>
-            <div id="myNav" class="overlay">
-                <h1>About Me</h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content side">
-                        
-                        <h5>Photo of me:</h5>
-                    <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                        <h3>More Text</h3>
-                        <p>Lorem ipsum dolor sit ame.</p>
-                    <div class="fakeimg" style="height:60px;">Image</div><br>
-                    <div class="fakeimg" style="height:60px;">Image</div><br>
-                    <div class="fakeimg" style="height:60px;">Image</div>
+        <section class="grid-container flex-container">
+            <row class="row">
+                <div id="myNav" class="overlay"> <!-- Overlay for About Me section -->
+                    <h1>About Me</h1>
+                    <!-- Button to close the overlay -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content main">
+                        <h5>My Story</h5>
+                        <!-- Personal story content -->
+                        <p>The interest for IT tech world have always been a part of my life since young.</p> 
+                        <p>All way from the past when I went to my friends house to play games on the commodore 64 and to the modern days how much it have developed.</p>
+                        <p>From all application in the smartphone to robotics drones, home system controlled by smartphones with softwares and softwares in the computer.</p>
+                        <p>My coding journey started for the first time around 2019 fall when I did little of small coding with Java at home by myself.</p> 
+                        <p>It was then got into the programming world. I did small project at home like basic Java calculators and Km/h counters.</p>
+                        <p>I enrolled my first programming course in 2021 august and learned more about Java.</p>
+                        <p>In the course, I got tasks to make a Yatzy game and a more advanced calculator.</p>
+                    </div>
                 </div>
-            </div>
+            </row>
         </section>
     </header>
 
-    <main class="grid-container flex-container main">
+    <main class="grid-container flex-container main"> <!-- Main section for content -->
         <section>
             <div class="main">
-
-                <h1>My Portfolio</h1>
+                <h1>My Portfolio</h1> <!-- Main heading for portfolio page -->
                 <hr>
                 
                 <h2>PORTFOLIO</h2>
                 <p>Resize the browser window to see the responsive effect.</p>
                 
                 <!-- Portfolio Gallery Grid -->
-                <div class="row">
-                  <div class="column">
-                    <div class="content">
-                      <img src="/image/ocean.jpg" alt="Mountains" style="width:100%">
-                      <h3>My Work</h3>
-                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="content">
-                    <img src="/image/falls2.jpg" alt="Lights" style="width:100%">
-                      <h3>My Work</h3>
-                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="content">
-                    <img src="/image/ocean.jpg" alt="Nature" style="width:100%">
-                      <h3>My Work</h3>
-                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="content">
-                    <img src="/image/mountainskies.jpg" alt="Mountains" style="width:100%">
-                      <h3>My Work</h3>
-                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                    </div>
-                  </div>
-                <!-- END GRID -->
-                </div>
+                <hr>
                 
+                <h2>Education</h2>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <h4>IT-Högskolan, Stockholm</h4>
+                            <p>Education: .NET-Developer</p>
+                            <h4>Komvux Pauli, Malmö</h4>
+                            <p>Education: Programming 1 Java & Programming 2 C#.</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <h4>TEC Travel Education Center, Malmö</h4>
+                            <p>Education: Travel Agency</p>
+                            <h4>Ihm Business School</h4>
+                            <p>Education: Public Bid Manager</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <h4>Sälj&Marknadshögskolan Hermods, EC Utbildning</h4>
+                            <p>Education: IT-Seller</p>
+                            <h4>Yrkesgymnasiet Malmö</h4>
+                            <p>Education: Business and Administration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>Skills</h2>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <h6>C#</h6>
+                            <h6>Java</h6>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <h6>SQL</h6>
+                            <h6>JavaScript</h6>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <h6>HTML</h6>
+                            <h6>CSS</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>Tools/Frameworks</h2>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <h6>.NET</h6>
+                            <h6>Visual Studio</h6>
+                            <h6>Visual Studio Code</h6>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <h6>Microsoft SQL Server 2019</h6>
+                            <h6>MongoDB</h6>
+                            <h6>Figma</h6>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <h6>React</h6>
+                            <h6>Bootstrap</h6>
+                            <h6>Tailwind CSS</h6>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <h6>GitHub</h6>
+                            <h6>Git</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2>My Works</h2>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://github.com/MartinBe94/Restuarant-Booking-System">
+                                <img src="/image/falls2.jpg" alt="Lights" style="width:100%">
+                                <h4>Booking System</h4>
+                            </a>
+                            <p>A booking system made with WPF and C#.</p>
+                            <p>(WPF/C#)</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://github.com/MartinBe94/FilmStream">
+                                <img src="/image/ocean.jpg" alt="Nature" style="width:100%">
+                                <h4>Filmstream Site</h4>
+                            </a>
+                            <p>A filmstream site made with C#, API, SQL, and Bootstrap.</p>
+                            <p>(C#/API)</p>
+                            <p>(SQL/Bootstrap)</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://github.com/MartinBe94/My-Homepage">
+                                <img src="/image/mountainskies.jpg" alt="Mountains" style="width:100%">
+                                <h4>Basic Webpage</h4>
+                            </a>
+                            <p>A basic and simple webpage made with HTML, JavaScript & CSS.</p>
+                            <p>(HTML/CSS)</p>
+                            <p>(JavaScript)</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://github.com/MartinBe94/Webpage-React-JS-Css-">
+                                <img src="/image/mountainskies.jpg" alt="Mountains" style="width:100%">
+                                <h4>Simple Webpage</h4>
+                            </a>
+                            <p>A simple webpage made with React, JavaScript & CSS.</p>
+                            <p>(HTML/CSS)</p>
+                            <p>(React/JavaScript)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
                 <div class="content">
-                  <img src="/image/p3.jpg" alt="Bear" style="width:100%">
-                  <h3>Some Other Work</h3>
-                  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-                  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <h2>My Other Works</h2>
+                    <p>All my works are in my GitHub.</p>
+                    <p>You can find them in my repos.</p>
+                    <a href="https://github.com/MartinBe94">
+                        <p>Link here</p>
+                    </a>
                 </div>
                 
                 <!-- END MAIN -->
-                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer"> <!-- Footer section -->
         <section>
-
+            <h2>Made by: Martin</h2> <!-- Footer text -->
         </section>
     </footer>
 
-    <script src="navmenu.js"></script>       
-    <script src="slideshow.js"></script>
-    <script src="galleryfilter.js"></script>
+    <!-- Link to external JavaScript files for navigation functionality -->
+    <script src="navmenu.js"></script>
 </body>
 </html>

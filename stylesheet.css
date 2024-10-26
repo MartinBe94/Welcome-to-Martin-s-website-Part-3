@@ -1,558 +1,583 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Style the body */
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  
-
-  .flexbox {
-
-  /* Header/logo Title */
-  .header {
-    display: flex;
-    padding: 220px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-  }
-  
-  /* Style the top navigation bar */
-  .navbar {
-    display: flex;
-    background-color: #333;
-  }
-  
-  /* Style the navigation bar links */
-  .navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-
-  }
-  
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-    text-decoration: none;
-  }
-
-.bgimg-1 {
-    background-image: url('image/img_parallax.jpg');
-    height: 100%;
-    justify-content: center;
-    position: flex;
+  box-sizing: border-box;
 }
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+.flexbox {
+
+.mainpage
+{
+  display: flex;
+  position: flex;
+  padding: 220px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {color:#bbb;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  color: coral;
+  text-decoration: none;
+}
+
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
-    position: flex;
-    opacity: 0.65;
-    background-position: center;
-    background-size: cover;
+  position: flex;
+  opacity: 0.65;
+  background-position: center;
+  background-size: cover;
 }
 
-  .caption {
-    color: #000;
+.caption {
+  color: #000;
 }
-  
-  /* Column container */
-  .row {  
-    display: flex;
-    flex-wrap: wrap;
-     padding: 0 4px;
-  }
 
-  /* Create four equal columns that sits next to each other */
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+   padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
+margin-top: 8px;
+vertical-align: middle;
 }
-  
-  
-  /* Main column */
-
-  .main {
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-    max-width: 1000px;
-  margin: auto;
-  }
-
-  .projects a,p,h1{
-    text-decoration: none;
-    color: black;
-  }
 
 
-  
-  /* Fake image, just for this example */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-  }
+/* Main column */
 
+/* Main content area */
+.main {
+flex: 70%; /* Flex-grow for main content */
+background-color: white; /* Background color */
+padding: 20px; /* Padding around content */
+max-width: 1000px; /* Maximum width */
+margin: auto; /* Center the content */
+}
 
-  .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    /* background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9); */
-    background-color: #f1f1f1;
-    overflow-y: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 8%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay h1 {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
+/* Styling for links, paragraphs, and headings in projects section */
+.projects a, p, h1 {
+text-decoration: none; /* Remove underline */
+color: black; /* Text color */
+}
 
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    font-size: 60px;
-  }
+/* Footer styles */
+.footer {
+padding: 20px; /* Padding for footer */
+text-align: center; /* Center text */
+background: #ddd; /* Background color */
+}
 
-  }
+/* Overlay styles */
+.overlay {
+height: 0%; /* Initial height */
+width: 100%; /* Full width */
+position: fixed; /* Fixed positioning */
+z-index: 1; /* Layering */
+top: 0; /* Align to top */
+left: 0; /* Align to left */
+background-color: #f1f1f1; /* Background color */
+overflow-y: hidden; /* Hide vertical overflow */
+transition: 0.5s; /* Transition effect */
+}
 
+.overlay-content {
+position: relative; /* Relative positioning for overlay content */
+top: 8%; /* Offset from top */
+width: 100%; /* Full width */
+text-align: start; /* Start-aligned text */
+margin-top: 30px; /* Margin from top */
+}
 
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: DodgerBlue;
-  }
+/* Heading styles in overlay */
+.overlay h1 {
+padding: 0px 21px; /* Padding */
+text-decoration: none; /* Remove underline */
+font-size: 36px; /* Font size */
+color: #818181; /* Text color */
+display: block; /* Block display */
+transition: 0.3s; /* Transition effect */
+}
 
-  
-    
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-    
-    .flip-card-front {
-      background-color: #bbb;
-      color: black;
-    }
-    
-    .flip-card-back {
-      background-color: #2980b9;
-      color: white;
-      transform: rotateY(180deg);
-    }
-    
+/* Subheading and paragraph styles in overlay */
+.overlay h5, h3, p {
+padding: 8px; /* Padding */
+text-decoration: none; /* Remove underline */
+font-size: 16px; /* Font size */
+color: #818181; /* Text color */
+display: block; /* Block display */
+transition: 0.3s; /* Transition effect */
+}
 
+/* Link styles in overlay */
+.overlay a {
+padding: 8px; /* Padding */
+text-decoration: none; /* Remove underline */
+font-size: 36px; /* Font size */
+color: #818181; /* Text color */
+display: block; /* Block display */
+transition: 0.3s; /* Transition effect */
+}
 
+/* Hover effect for links in overlay */
+.overlay a:hover, .overlay a:focus {
+color: #f1f1f1; /* Change color on hover/focus */
+}
 
+/* Close button styles */
+.overlay .closebtn {
+position: absolute; /* Absolute positioning */
+top: 0px; /* Align to top */
+right: 0px; /* Align to right */
+font-size: 60px; /* Font size */
+}
 
+/* Flex container for child elements */
+.flex-container {
+display: flex; /* Enable flexbox */
+flex-wrap: wrap; /* Allow wrapping */
+}
 
+/* Flip card hover effect */
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg); /* Rotate on hover */
+}
 
-  
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+/* Front side of flip card */
+.flip-card-front {
+background-color: #bbb; /* Background color */
+color: black; /* Text color */
+}
 
+/* Back side of flip card */
+.flip-card-back {
+background-color: #2980b9; /* Background color */
+color: white; /* Text color */
+transform: rotateY(180deg); /* Rotate for back side */
+}
+
+/* Input, select, and textarea styles */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Padding */
+border: 1px solid #ccc; /* Border */
+border-radius: 4px; /* Rounded corners */
+box-sizing: border-box; /* Box sizing */
+margin-top: 6px; /* Margin on top */
+margin-bottom: 16px; /* Margin on bottom */
+resize: vertical; /* Vertical resizing */
+}
+
+/* Submit button styles */
+button[type=submit] {
+background-color: #04AA6D; /* Background color */
+color: white; /* Text color */
+padding: 12px 20px; /* Padding */
+border: none; /* No border */
+border-radius: 4px; /* Rounded corners */
+cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover effect for submit button */
+button[type=submit]:hover {
+background-color: #45a049; /* Change background on hover */
+}
+
+/* Container styles */
+.container {
+border-radius: 5px; /* Rounded corners */
+background-color: #f2f2f2; /* Background color */
+padding: 20px; /* Padding */
+}
+
+/* Video styles */
 #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+position: fixed; /* Fixed positioning */
+right: 0; /* Align to right */
+bottom: 0; /* Align to bottom */
+min-width: 100%; /* Minimum width */
+min-height: 100%; /* Minimum height */
 }
 
-
+/* Button styles */
 #myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
+width: 200px; /* Width */
+font-size: 18px; /* Font size */
+padding: 10px; /* Padding */
+border: none; /* No border */
+background: #000; /* Background color */
+color: #fff; /* Text color */
+cursor: pointer; /* Pointer cursor */
 }
 
+/* Hover effect for button */
 #myBtn:hover {
-  background: #ddd;
-  color: black;
+background: #ddd; /* Change background on hover */
+color: black; /* Change text color */
 }
 
-  .chip p{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    padding: 7;
-    background-color: #f1f1f1;
-  }
-  
-
-/* For mobile phones: */
-  @media only screen and (max-width: 610px) {
-    .example {background: red;}
-      .row, .navbar {   
-    flex-direction: column;
-  }
-
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .mobile-container {
-    max-width: 610px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    border-radius: 10px;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-    transition: 0.6s;
-  }
-  
-  .topnav #myLinks {
-    height: 0px;
-    transition: 0.6s;
-  }
-
-  
-  .caption span.border {
-    position: flex;
-    background-color: #111;
-    color: #fff;
-    padding: 2px;
-    font-size: 17px;
-    letter-spacing: 12px;
-  }
-
-
-
-
-  .flex-container > div {
-    background-color: #f1f1f1;
-    width: 150px;
-    margin: 10px;
-    text-align: center;
-    font-size: 12px;
-  }
-  .flip-card {
-    background-color: transparent;
-    width: 150px;
-    height: 150px;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-
-  .chip{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    border-radius: 25px;
-    background-color: #f1f1f1;
-  }
-
-
-  /* .topnav #myLinks {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
+/* Chip styles */
+.chip p {
+display: inline-block; /* Inline block display */
+text-decoration: none; /* Remove underline */
+color: black; /* Text color */
+padding: 7px; /* Padding */
+background-color: #f1f1f1; /* Background color */
 }
 
-  .topnav #myLinks.show {
-    opacity: 1;
-    visibility: visible;
-} */
-  
-  
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    transition: 0.6s;
-  }
-  
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
 
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 610px) {
-    .example {background: green;}
-    .overlay {overflow-y: auto;}
-    .overlay h1 a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-    .column {
-      flex: 25%;
-      width: 50%;
-      max-width: 25%;
-      padding: 0 4px;
-    }
-    
-    .navbar {
-      display: flex;
-      justify-content: center; /* Center the items horizontally */
-      background-color: #333;
-    }
-    
-    /* Style the navigation bar links */
-    .navbar a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      text-align: center;
-  
-    }
-    
-    .topnav a.icon {
-      display: none;
+/* For mobile phones */
+@media only screen and (max-width: 610px) {
 
-    }
+/* General example class */
+.example {
+  background: white; /* Background color */
+}
 
-    
-    .active {
-      display: none;
-    }
-    .caption span.border {
-      background-color: #111;
-      color: #fff;
-      padding: 6px;
-      font-size: 27px;
-      letter-spacing: 15px;
-    }
-  
+/* Flexbox adjustments for rows and navbar */
+.row, .navbar {
+  flex-direction: column; /* Stack items vertically */
+}
 
+/* Background image for specific section */
+.bgimg-1 {
+  background-image: url('image/20231002_120450.jpg'); /* Background image */
+  height: 750px; /* Height of the section */
+  justify-content: center; /* Center content */
+  position: flex; /* Adjust positioning */
+}
 
-    .flex-container > div {
-      background-color: #f1f1f1;
-      width: 300px;
-      margin: 10px;
-      text-align: center;
-      font-size: 20px;
-    }
-    .flip-card {
-      background-color: transparent;
-      width: 300px;
-      height: 300px;
-      perspective: 1000px;
-    }
-    
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-  
-    .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
+/* Full-width columns */
+.column {
+  flex: 100%; /* Full width */
+  max-width: 100%; /* No maximum width */
+}
 
-    .chip {
-      display: inline-block;
-      text-decoration: none;
-  color: black;
-      line-height: 5%;
-      border-radius: 25px;
-      background-color: #f1f1f1;
-    }
+/* Mobile container styling */
+.mobile-container {
+  max-width: 610px; /* Maximum width */
+  margin: auto; /* Center the container */
+  height: 500px; /* Height */
+  border-radius: 10px; /* Rounded corners */
+}
 
-    
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .example {background: blue;}
+/* Navigation bar styles */
+.topnav {
+  overflow: hidden; /* Prevent overflow */
+  background-color: #333; /* Background color */
+  position: relative; /* Relative positioning */
+  transition: 0.6s; /* Transition effect */
+}
 
-    
+/* Links container height transition */
+.topnav #myLinks {
+  height: 0px; /* Initial height */
+  transition: 0.6s; /* Transition effect */
+}
 
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .example {background: orange;}
+/* Caption border styles */
+.caption span.border {
+  position: flex; /* Adjust positioning */
+  background-color: #111; /* Background color */
+  color: #fff; /* Text color */
+  padding: 2px; /* Padding */
+  font-size: 17px; /* Font size */
+  letter-spacing: 12px; /* Letter spacing */
+}
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
+/* Flex container for child elements */
+.flex-container > div {
+  background-color: #f1f1f1; /* Background color */
+  width: 150px; /* Fixed width */
+  margin: 10px; /* Margin */
+  text-align: center; /* Center text */
+  font-size: 12px; /* Font size */
+}
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
+/* Flip card styles */
+.flip-card {
+  background-color: transparent; /* Transparent background */
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+/* Inner flip card styles */
+.flip-card-inner {
+  position: relative; /* Relative positioning */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  text-align: center; /* Center text */
+  transition: transform 0.6s; /* Transform transition */
+  transform-style: preserve-3d; /* Preserve 3D style */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Front and back of flip card */
+.flip-card-front, .flip-card-back {
+  position: absolute; /* Absolute positioning */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  -webkit-backface-visibility: hidden; /* Hide backface in Safari */
+  backface-visibility: hidden; /* Hide backface */
+}
+
+/* Chip styles */
+.chip {
+  display: inline-block; /* Inline block display */
+  text-decoration: none; /* Remove underline */
+  color: black; /* Text color */
+  font-size: 16px; /* Font size */
+  border-radius: 25px; /* Rounded corners */
+  background-color: #f1f1f1; /* Background color */
+}
+
+/* Navigation link styles */
+.topnav a {
+  color: #bbb; /* Text color */
+  padding: 14px 16px; /* Padding */
+  text-decoration: none; /* Remove underline */
+  font-size: 17px; /* Font size */
+  display: block; /* Block display */
+  transition: 0.6s; /* Transition effect */
+}
+
+/* Navigation icon styles */
+.topnav a.icon {
+  background: #333; /* Background color */
+  display: block; /* Block display */
+  position: absolute; /* Absolute positioning */
+  right: 0; /* Align to right */
+  top: 0; /* Align to top */
+}
+
+/* Hover effect for navigation links */
+.topnav a:hover {
+  color: coral; /* Change color on hover */
+}
+
+/* Active link styles */
+.active {
+  background-color: #333; /* Background color */
+  color: #bbb; /* Text color */
+}
+
+/* Column width classes for responsive design */
+.col-s-1 { width: 8.33%; }
+.col-s-2 { width: 16.66%; }
+.col-s-3 { width: 25%; }
+.col-s-4 { width: 33.33%; }
+.col-s-5 { width: 41.66%; }
+.col-s-6 { width: 50%; }
+.col-s-7 { width: 58.33%; }
+.col-s-8 { width: 66.66%; }
+.col-s-9 { width: 75%; }
+.col-s-10 { width: 83.33%; }
+.col-s-11 { width: 91.66%; }
+.col-s-12 { width: 100%; }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 610px) {
+.example {
+  background: green; /* Change background color */
+}
+
+.overlay {
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.overlay h1 a {
+  font-size: 20px; /* Font size for overlay headings */
+}
+
+.overlay .closebtn {
+  font-size: 40px; /* Size for close button */
+  top: 15px; /* Positioning */
+  right: 35px; /* Positioning */
+}
+
+.column {
+  flex: 25%; /* Flex basis */
+  width: 50%; /* Width */
+  max-width: 25%; /* Maximum width */
+  padding: 0 4px; /* Padding */
+}
+
+.bgimg-1 {
+  background-image: url('image/20231002_120501.jpg'); /* Background image */
+  height: 800px; /* Height of the section */
+  justify-content: center; /* Center content */
+  position: flex; /* Positioning */
+}
+
+.navbar {
+  display: flex; /* Flex display */
+  justify-content: center; /* Center items */
+  background-color: #333; /* Background color */
+}
+
+.navbar a {
+  color: white; /* Link color */
+  padding: 14px 20px; /* Padding */
+  text-decoration: none; /* No underline */
+  text-align: center; /* Center text */
+}
+
+.topnav a.icon {
+  display: none; /* Hide icon */
+}
+
+.active {
+  display: none; /* Hide active class */
+}
+
+.caption span.border {
+  background-color: #111; /* Background color for captions */
+  color: #fff; /* Text color */
+  padding: 6px; /* Padding */
+  font-size: 27px; /* Font size */
+  letter-spacing: 15px; /* Letter spacing */
+}
+
+.flex-container > div {
+  background-color: #f1f1f1; /* Background color */
+  width: 300px; /* Fixed width */
+  margin: 10px; /* Margin */
+  text-align: center; /* Center text */
+  font-size: 20px; /* Font size */
+}
+
+.flip-card {
+  background-color: transparent; /* Transparent background */
+  width: 300px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.flip-card-inner {
+  position: relative; /* Relative positioning */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  text-align: center; /* Center text */
+  transition: transform 0.6s; /* Transition for flip effect */
+  transform-style: preserve-3d; /* Preserve 3D style */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow effect */
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute; /* Absolute positioning */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  -webkit-backface-visibility: hidden; /* Hide backface in Safari */
+  backface-visibility: hidden; /* Hide backface */
+}
+
+.chip {
+  display: inline-block; /* Inline block display */
+  text-decoration: none; /* No underline */
+  color: black; /* Text color */
+  line-height: 5%; /* Line height */
+  border-radius: 25px; /* Rounded corners */
+  background-color: #f1f1f1; /* Background color */
+}
+
+/* Column width classes for responsive design */
+.col-s-1 { width: 8.33%; }
+.col-s-2 { width: 16.66%; }
+.col-s-3 { width: 25%; }
+.col-s-4 { width: 33.33%; }
+.col-s-5 { width: 41.66%; }
+.col-s-6 { width: 50%; }
+.col-s-7 { width: 58.33%; }
+.col-s-8 { width: 66.66%; }
+.col-s-9 { width: 75%; }
+.col-s-10 { width: 83.33%; }
+.col-s-11 { width: 91.66%; }
+.col-s-12 { width: 100%; }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.example {
+  background: blue; /* Change background color */
+}
+
+/* Column width classes */
+.col-s-1 { width: 8.33%; }
+.col-s-2 { width: 16.66%; }
+.col-s-3 { width: 25%; }
+.col-s-4 { width: 33.33%; }
+.col-s-5 { width: 41.66%; }
+.col-s-6 { width: 50%; }
+.col-s-7 { width: 58.33%; }
+.col-s-8 { width: 66.66%; }
+.col-s-9 { width: 75%; }
+.col-s-10 { width: 83.33%; }
+.col-s-11 { width: 91.66%; }
+.col-s-12 { width: 100%; }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.example {
+  background: orange; /* Change background color */
+}
+
+/* Column width classes */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.example {
+  background: pink; /* Change background color */
+}
+
+/* Column width classes */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+}

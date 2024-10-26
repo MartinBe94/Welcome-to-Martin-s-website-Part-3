@@ -1,152 +1,162 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="projects" href="projects.css">
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>Projects</title> <!-- Title of the webpage -->
+    
+    <!-- Link to external stylesheets for custom styles -->
+    <link rel="stylesheet" href="stylesheet.css"> <!-- Main stylesheet -->
+    <link rel="projects" href="projects.css"> <!-- Stylesheet specific to projects page -->
+    
+    <!-- Links to font styles from external sources -->
     <link href="https://fonts.cdnfonts.com/css/graffiti-font" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/cartoon-free" rel="stylesheet">
+    
+    <!-- Links to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 </head>
-<body class="flexbox mobile-container">
 
+<body class="flexbox mobile-container"> <!-- Main body with CSS classes for layout -->
     <header>
         <section class="topnav">
-            <a href="#home" class="active">Projects</a>
-                <nav class="navbar" id="myLinks" >
-                    <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="portfolio.html">My Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                    <a onclick="openNav()">About Me</a>
-                </nav>
+            <a href="#home" class="active">Projects</a> <!-- Active link for Projects -->
+            <nav class="navbar" id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="portfolio.html">My Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" onclick="openNav()">About Me</a> <!-- Link to open About Me overlay -->
+            </nav>
+            <!-- Button to open navigation menu (icon) -->
             <a href="javascript:void(0);" class="icon" id="openBtn"><i class="fa fa-bars"></i></a>
+            <!-- Button to close navigation menu (icon) -->
             <a href="javascript:void(0);" class="icon" id="closeBtn" style="display:none;"><i class="fa fa-times"></i></a>
         </section>
 
-
-       
-
-        <section>
-            <div id="myNav" class="overlay">
-                <h1>About Me</h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content side">
-                        
-                        <h5>Photo of me:</h5>
-                    <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                        <h3>More Text</h3>
-                        <p>Lorem ipsum dolor sit ame.</p>
-                    <div class="fakeimg" style="height:60px;">Image</div><br>
-                    <div class="fakeimg" style="height:60px;">Image</div><br>
-                    <div class="fakeimg" style="height:60px;">Image</div>
+        <section class="grid-container flex-container">
+            <row class="row">
+                <div id="myNav" class="overlay"> <!-- Overlay for About Me section -->
+                    <h1>About Me</h1>
+                    <!-- Button to close the overlay -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content main">
+                        <h5>My Story</h5>
+                        <!-- Personal story content -->
+                        <p>The interest for IT tech world have always been a part of my life since young.</p>
+                        <p>All way from the past when I went to my friends house to play games on the commodore 64 and to the modern days how much it have developed.</p>
+                        <p>From all application in the smartphone to robotics drones, home system controlled by smartphones with softwares and softwares in the computer.</p>
+                        <p>My coding journey started for the first time around 2019 fall when I did little of small coding with Java at home by myself.</p>
+                        <p>It was then got into the programming world. I did small project at home like basic Java calculators and Km/h counters.</p>
+                        <p>I enrolled my first programming course in 2021 august and learned more about Java.</p>
+                        <p>In the course, I got tasks to make a Yatzy game and a more advanced calculator.</p>
+                    </div>
                 </div>
-            </div>
+            </row>
         </section>
-
     </header>
 
-    <main class="grid-container flex-container main">
+    <main class="grid-container flex-container main"> <!-- Main section for content -->
         <section>
-
-            <div div class="main ">
-                <h1>My Projects</h1>
+            <div class="main">
+                <h1>My Projects</h1> <!-- Main heading for projects page -->
                 <hr>
-            <div class="flex-container projects">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <iframe id="myVideo" src="https://www.youtube.com/embed/qPPKRgeRzfg?autoplay=1&mute=1&loop=1&playlist=qPPKRgeRzfg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
-                    </div>
-                        <div class="flip-card-back">
-                            <a href="https://github.com/MartinBe94/FilmStream">
-                            <h1>FilmStream</h1> 
-                            <p>A filmstream site made with</p> 
-                            <p>(C#/API/SQL/Bootstrap)</p>
-                            </a>
+
+                <div class="flex-container projects"> <!-- Container for project cards -->
+                    <!-- Project Card: FilmStream -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <iframe id="myVideo" src="https://www.youtube.com/embed/qPPKRgeRzfg?autoplay=1&mute=1&loop=1&playlist=qPPKRgeRzfg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/MartinBe94/FilmStream">
+                                    <h1>FilmStream</h1>
+                                    <p>A filmstream site made with</p>
+                                    <p>(C#/API/SQL/Bootstrap)</p>
+                                </a>
+                            </div>
                         </div>
-                  </div>
-                </div>
-                
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <iframe id="myVideo" src="https://www.youtube.com/embed/MOlHEJ-5EwM?autoplay=1&mute=1&loop=1&playlist=MOlHEJ-5EwM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
                     </div>
-                    <div class="flip-card-back">
-                      <a href="https://github.com/MartinBe94/Restuarant-Booking-System">
-                      <h1>Restuarant Booking System</h1> 
-                      <p>A booking system made with</p> 
-                      <p>(WPF/C#)</p>
-                    </a>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <iframe id="myVideo" src="https://www.youtube.com/embed/5soXCeIxA-E?autoplay=1&mute=1&loop=1&playlist=5soXCeIxA-E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
-                    </div>
-                    <div class="flip-card-back">
-                        <a href="https://github.com/MartinBe94/My-Homepage">
-                            <h1>Basic Webpage</h1> 
-                            <p>A website made with</p> 
-                            <p>(Javascript/HTML/CSS)</p>
-                        </a>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <iframe id="myVideo" src="https://www.youtube.com/embed/FXhO-KLIZL8?autoplay=1&mute=1&loop=1&playlist=FXhO-KLIZL8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
-                      </div>
-                      <div class="flip-card-back">
-                        <a href="https://github.com/MartinBe94/Webpage-React-JS-Css-">
-                        <h1>Simple Webpage</h1> 
-                        <p>A website made with</p> 
-                        <p>(React/Javascript/CSS)</p>
-                        </a>
-                      </div>
+                    <!-- Project Card: Restaurant Booking System -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <iframe id="myVideo" src="https://www.youtube.com/embed/MOlHEJ-5EwM?autoplay=1&mute=1&loop=1&playlist=MOlHEJ-5EwM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/MartinBe94/Restuarant-Booking-System">
+                                    <h1>Restaurant Booking System</h1>
+                                    <p>A booking system made with</p>
+                                    <p>(WPF/C#)</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
 
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <iframe id="myVideo" src="https://www.youtube.com/embed/Y1eTLFR6bw4?autoplay=1&mute=1&loop=1&playlist=Y1eTLFR6bw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
-                      </div>
-                      <div class="flip-card-back">
-                        <a href="https://github.com/MartinBe94/MongoCRUDDB">
-                        <h1>Sneakers Webshop </h1> 
-                        <p>A sneaker webshop system made with</p> 
-                        <p>(.Net/C#/MongoCRUD DB)</p> 
-                        </a>
-                      </div>
+                    <!-- Project Card: Basic Webpage -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <iframe id="myVideo" src="https://www.youtube.com/embed/5soXCeIxA-E?autoplay=1&mute=1&loop=1&playlist=5soXCeIxA-E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/MartinBe94/My-Homepage">
+                                    <h1>Basic Webpage</h1>
+                                    <p>A website made with</p>
+                                    <p>(JavaScript/HTML/CSS)</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
 
-                </div>
+                    <!-- Project Card: Simple Webpage -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <iframe id="myVideo" src="https://www.youtube.com/embed/FXhO-KLIZL8?autoplay=1&mute=1&loop=1&playlist=FXhO-KLIZL8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/MartinBe94/Webpage-React-JS-Css-">
+                                    <h1>Simple Webpage</h1>
+                                    <p>A website made with</p>
+                                    <p>(React/JavaScript/CSS)</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Sneakers Webshop -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <iframe id="myVideo" src="https://www.youtube.com/embed/Y1eTLFR6bw4?autoplay=1&mute=1&loop=1&playlist=Y1eTLFR6bw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:150px;height:150px;"></iframe>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href="https://github.com/MartinBe94/MongoCRUDDB">
+                                    <h1>Sneakers Webshop</h1>
+                                    <p>A sneaker webshop system made with</p>
+                                    <p>(.Net/C#/MongoCRUD DB)</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of projects container -->
             </div>
-            
-            
         </section>
     </main>
 
-    <footer>
+    <footer class="footer"> <!-- Footer section -->
         <section>
-
+            <h2>Made by: Martin</h2> <!-- Footer text -->
         </section>
     </footer>
 
-    <script src="navmenu.js"></script>       
-    <script src="slideshow.js"></script>
-    <script src="videoplay.js"></script>
-    <script src="galleryfilter.js"></script>
+    <!-- Link to external JavaScript files for functionality -->
+    <script src="navmenu.js"></script> <!-- Navigation menu script -->
+    <script src="videoplay.js"></script> <!-- Video play script -->
 </body>
 </html>

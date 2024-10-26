@@ -1,143 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Home</title> <!-- Title of the webpage -->
+    
+    <!-- Link to external stylesheet for custom styles -->
     <link rel="stylesheet" href="stylesheet.css">
-    <!-- <link rel="index" href="index.css"> -->
+    
+    <!-- Links to font styles from external sources -->
     <link href="https://fonts.cdnfonts.com/css/graffiti-font" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/cartoon-free" rel="stylesheet">
+    
+    <!-- Font Awesome icons (version 6 and 5) for additional styling -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-   
 </head>
-<body class="flexbox mobile-container">
 
-
+<body class="flexbox mobile-container"> <!-- Main body with CSS classes for layout -->
     <header>
         <section class="topnav">
-            <a href="#home" class="active">Logo</a>
-                <nav class="navbar" id="myLinks" >
-                    <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="portfolio.html">My Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                    <a onclick="openNav()">About Me</a>
-                </nav>
+            <a href="#home" class="active">Home</a> <!-- Active link for Home -->
+            <nav class="navbar" id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="portfolio.html">My Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <!-- Link to open About Me overlay -->
+                <a href="javascript:void(0);" onclick="openNav()">About Me</a>
+            </nav>
+            <!-- Button to open navigation menu (icon) -->
             <a href="javascript:void(0);" class="icon" id="openBtn"><i class="fa fa-bars"></i></a>
+            <!-- Button to close navigation menu (icon) -->
             <a href="javascript:void(0);" class="icon" id="closeBtn" style="display:none;"><i class="fa fa-times"></i></a>
         </section>
 
-        <section class="header bgimg-1">
-                <div class="caption">
-                  <span class="border">Welcome to the</span><br>
-                  <span class="border">Mainpage</span>
+        <section class="grid-container flex-container">
+            <row class="row">
+                <div id="myNav" class="overlay"> <!-- Overlay for About Me section -->
+                    <h1>About Me</h1>
+                    <!-- Button to close the overlay -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content main">
+                        <h5>My Story</h5>
+                        <!-- Personal story content -->
+                        <p>The interest for IT tech world have always been a part of my life since young.</p>
+                        <p>All way from the past when I went to my friends house to play games on the commodore 64 and to the modern days how much it have developed.</p>
+                        <p>From all application in the smartphone to robotics drones, home system controlled by smartphones with softwares and softwares in the computer.</p>
+                        <p>My coding journey started for the first time around 2019 fall when I did little of small coding with Java at home by myself.</p>
+                        <p>It was then got into the programming world. I did small project at home like basic Java calculators and Km/h counters.</p>
+                        <p>I enrolled my first programming course in 2021 august and learned more about Java.</p>
+                        <p>In the course, I got tasks to make a Yatzy game and a more advanced calculator.</p>
+                    </div>
                 </div>
-        </section>
-
-       
-
-        <section>
-            <div id="myNav" class="overlay">
-                <h1>About Me</h1><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content side">
-                        
-                        <h5>Photo of me:</h5>
-                    <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                        <h3>More Text</h3>
-                        <p>Lorem ipsum dolor sit ame.</p>
-                    <div class="fakeimg" style="height:60px;">Image</div><br>
-                    <div class="fakeimg" style="height:60px;">Image</div><br>
-                    <div class="fakeimg" style="height:60px;">Image</div>
-                </div>
-            </div>
+            </row>
         </section>
     </header>
 
-       <!-- The flexible grid (content) -->
-    <row class="row">
-        <!-- <side class="side">
-            <section>
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div>
-            </section>
-        </side> -->
-
-    <main class="grid-container flex-container main">
-        <section>
-           <!-- Photo Grid -->
-<div class="row"> 
-    <div class="column">
-      <img src="/image/wedding.jpg" style="width:100%">
-      <img src="/image/rocks.jpg" style="width:100%">
-      <img src="/image/falls2.jpg" style="width:100%">
-      <img src="/image/paris.jpg" style="width:100%">
-      <img src="/image/nature.jpg" style="width:100%">
-      <img src="/image/mist.jpg" style="width:100%">
-      <img src="/image/paris.jpg" style="width:100%">
-    </div>
-    
-    <div class="column">
-      <img src="/image/underwater.jpg" style="width:100%">
-      <img src="/image/ocean.jpg" style="width:100%">
-      <img src="/image/wedding.jpg" style="width:100%">
-      <img src="/image/mountainskies.jpg" style="width:100%">
-      <img src="/image/rocks.jpg" style="width:100%">
-      <img src="/image/underwater.jpg" style="width:100%">
-    </div> 
-     
-    <div class="column">
-      <img src="/image/wedding.jpg" style="width:100%">
-      <img src="/image/rocks.jpg" style="width:100%">
-      <img src="/image/falls2.jpg" style="width:100%">
-      <img src="/image/paris.jpg" style="width:100%">
-      <img src="/image/nature.jpg" style="width:100%">
-      <img src="/image/mist.jpg" style="width:100%">
-      <img src="/image/paris.jpg" style="width:100%">
-    </div>
-    
-    <div class="column">
-      <img src="/image/underwater.jpg" style="width:100%">
-      <img src="/image/ocean.jpg" style="width:100%">
-      <img src="/image/wedding.jpg" style="width:100%">
-      <img src="/image/mountainskies.jpg" style="width:100%">
-      <img src="/image/rocks.jpg" style="width:100%">
-      <img src="/image/underwater.jpg" style="width:100%">
-    </div>
-  </div>
-            <!-- <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    <main>
+        <section class="mainpage bgimg-1"> <!-- Main page section with background image -->
+            <div class="caption">
+                <span class="border">Welcome to the</span><br>
+                <span class="border">Mainpage</span>
+            </div>
         </section>
     </main>
 
-    </row>
-
-    <footer class="footer">
+    <footer class="footer"> <!-- Footer section -->
         <section>
-            <h2>Made by: Martin</h2>
+            <h2>Made by: Martin</h2> <!-- Footer text -->
         </section>
     </footer>
 
-    <script src="navmenu.js"></script>       
-    <script src="slideshow.js"></script>
-    <script src="galleryfilter.js"></script>
+    <!-- Link to external JavaScript file for navigation functionality -->
+    <script src="navmenu.js"></script>
 </body>
 </html>
