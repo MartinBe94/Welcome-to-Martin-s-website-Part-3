@@ -108,16 +108,6 @@ display: block; /* Block display */
 transition: 0.3s; /* Transition effect */
 }
 
-/* Subheading and paragraph styles in overlay */
-.overlay h5, h3, p {
-padding: 8px; /* Padding */
-text-decoration: none; /* Remove underline */
-font-size: 16px; /* Font size */
-color: #818181; /* Text color */
-display: block; /* Block display */
-transition: 0.3s; /* Transition effect */
-}
-
 /* Link styles in overlay */
 .overlay a {
 padding: 8px; /* Padding */
@@ -256,6 +246,15 @@ background-color: #f1f1f1; /* Background color */
   text-align: center;
 }
 
+/* Subheading and paragraph styles in overlay */
+.overlay h5, h3, p {
+  padding: 2px; /* Padding */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Font size */
+  color: #818181; /* Text color */
+  display: block; /* Block display */
+  transition: 0.3s; /* Transition effect */
+  }
 
 /* Background image for specific section */
 .bgimg-1 {
@@ -420,6 +419,16 @@ background-color: #f1f1f1; /* Background color */
 .overlay h1 a {
   font-size: 20px; /* Font size for overlay headings */
 }
+
+/* Subheading and paragraph styles in overlay */
+.overlay h5, h3, p {
+  padding: 12px; /* Padding */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Font size */
+  color: #818181; /* Text color */
+  display: block; /* Block display */
+  transition: 0.3s; /* Transition effect */
+  }
 
 .overlay .closebtn {
   font-size: 40px; /* Size for close button */
