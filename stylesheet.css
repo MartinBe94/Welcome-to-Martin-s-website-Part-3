@@ -11,13 +11,7 @@ body {
 
 .flexbox {
 
-.mainpage
-{
-  display: flex;
-  position: flex;
-  padding: 220px;
-  text-align: center;
-}
+
 
 /* Style the top navigation bar */
 .navbar {
@@ -261,10 +255,19 @@ background-color: #f1f1f1; /* Background color */
   flex-direction: column; /* Stack items vertically */
 }
 
+.mainpage
+{
+  display: flex;
+  position: flex;
+  padding: 350px 0px 355px 0px;
+  text-align: center;
+}
+
+
 /* Background image for specific section */
 .bgimg-1 {
-  background-image: url('image/20231002_120450.jpg'); /* Background image */
-  height: 100vh; /* Full viewport height */
+  background-image: url('image/20160526_172854.jpg'); /* Background image */
+  height: 100%; /* Make height flexible based on content */
   background-position: center;
   background-size: cover;
   display: flex; /* Use flexbox for layout */
@@ -422,6 +425,15 @@ background-color: #f1f1f1; /* Background color */
   top: 15px; /* Positioning */
   right: 35px; /* Positioning */
 }
+
+.mainpage
+{
+  display: flex;
+  position: flex;
+  padding: 220px;
+  text-align: center;
+}
+
 
 .column {
   flex: 25%; /* Flex basis */
